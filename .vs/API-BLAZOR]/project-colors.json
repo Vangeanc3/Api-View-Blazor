@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e78d41b5-622d-4745-9770-6d1ebc6a5c79": {
+      "ProjectGuid": "e78d41b5-622d-4745-9770-6d1ebc6a5c79",
+      "DisplayName": "API-BLAZOR]",
+      "ColorIndex": 0
+    },
+    "d6c7437e-81f3-4c4b-9391-0226c33fc0e3": {
+      "ProjectGuid": "d6c7437e-81f3-4c4b-9391-0226c33fc0e3",
+      "DisplayName": "AppBlazor",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Arquivos Diversos",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}

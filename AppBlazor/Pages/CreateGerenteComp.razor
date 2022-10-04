@@ -1,0 +1,31 @@
+﻿@page "/creategerentecomp"
+
+@using Newtonsoft.Json;
+
+<h3>CreateGerenteComp</h3>
+
+<button @onclick="GetGerencias">Get</button>
+
+@foreach (var gerencia in gerencias)
+{
+    <p>
+        @gerencia.Nome
+    </p>
+}
+
+@code {
+    List<Gerencia> gerencias = new List<Gerencia>();
+
+    private async void GetGerencias()
+    {
+
+        string url = "http://localhost:6064/Gerencia";
+
+        using (var cliente = new HttpClient())
+        {
+            HttpResponseMessage resposta = await cliente.GetAsync(url);
+            string json = await resposta.Content.ReadAsStringAsync();
+            gerencias = JsonConvert.DeserializeObject<List<Gerencia>>(json);
+        }
+    }
+}
